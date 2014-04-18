@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3E210F019018F7F0022061A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E210EF19018F7F0022061A /* Foundation.framework */; };
+		F3E210F219018F7F0022061A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E210F119018F7F0022061A /* CoreGraphics.framework */; };
+		F3E210F419018F800022061A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E210F319018F800022061A /* UIKit.framework */; };
+		F3E210F619018F800022061A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E210F519018F800022061A /* CoreData.framework */; };
+		F3E210FC19018F800022061A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3E210FA19018F800022061A /* InfoPlist.strings */; };
+		F3E210FE19018F800022061A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E210FD19018F800022061A /* main.m */; };
+		F3E2110219018F800022061A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E2110119018F800022061A /* AppDelegate.m */; };
+		F3E2110519018F800022061A /* FlappySearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3E2110319018F800022061A /* FlappySearch.xcdatamodeld */; };
+		F3E2110719018F800022061A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E2110619018F800022061A /* Images.xcassets */; };
+		F3E2110E19018F800022061A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E2110D19018F800022061A /* XCTest.framework */; };
+		F3E2110F19018F800022061A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E210EF19018F7F0022061A /* Foundation.framework */; };
+		F3E2111019018F800022061A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E210F319018F800022061A /* UIKit.framework */; };
+		F3E2111119018F800022061A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E210F519018F800022061A /* CoreData.framework */; };
+		F3E2111919018F800022061A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3E2111719018F800022061A /* InfoPlist.strings */; };
+		F3E2111B19018F800022061A /* FlappySearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E2111A19018F800022061A /* FlappySearchTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3E2111219018F800022061A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3E210E419018F7F0022061A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3E210EB19018F7F0022061A;
+			remoteInfo = FlappySearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3E210EC19018F7F0022061A /* FlappySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E210EF19018F7F0022061A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3E210F119018F7F0022061A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F3E210F319018F800022061A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F3E210F519018F800022061A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F3E210F919018F800022061A /* FlappySearch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlappySearch-Info.plist"; sourceTree = "<group>"; };
+		F3E210FB19018F800022061A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3E210FD19018F800022061A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3E210FF19018F800022061A /* FlappySearch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlappySearch-Prefix.pch"; sourceTree = "<group>"; };
+		F3E2110019018F800022061A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3E2110119018F800022061A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3E2110419018F800022061A /* FlappySearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlappySearch.xcdatamodel; sourceTree = "<group>"; };
+		F3E2110619018F800022061A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F3E2110C19018F800022061A /* FlappySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlappySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E2110D19018F800022061A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F3E2111619018F800022061A /* FlappySearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlappySearchTests-Info.plist"; sourceTree = "<group>"; };
+		F3E2111819018F800022061A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3E2111A19018F800022061A /* FlappySearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlappySearchTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3E210E919018F7F0022061A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E210F219018F7F0022061A /* CoreGraphics.framework in Frameworks */,
+				F3E210F619018F800022061A /* CoreData.framework in Frameworks */,
+				F3E210F419018F800022061A /* UIKit.framework in Frameworks */,
+				F3E210F019018F7F0022061A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E2110919018F800022061A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E2110E19018F800022061A /* XCTest.framework in Frameworks */,
+				F3E2111119018F800022061A /* CoreData.framework in Frameworks */,
+				F3E2111019018F800022061A /* UIKit.framework in Frameworks */,
+				F3E2110F19018F800022061A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3E210E319018F7F0022061A = {
+			isa = PBXGroup;
+			children = (
+				F3E210F719018F800022061A /* FlappySearch */,
+				F3E2111419018F800022061A /* FlappySearchTests */,
+				F3E210EE19018F7F0022061A /* Frameworks */,
+				F3E210ED19018F7F0022061A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3E210ED19018F7F0022061A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3E210EC19018F7F0022061A /* FlappySearch.app */,
+				F3E2110C19018F800022061A /* FlappySearchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3E210EE19018F7F0022061A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3E210EF19018F7F0022061A /* Foundation.framework */,
+				F3E210F119018F7F0022061A /* CoreGraphics.framework */,
+				F3E210F319018F800022061A /* UIKit.framework */,
+				F3E210F519018F800022061A /* CoreData.framework */,
+				F3E2110D19018F800022061A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3E210F719018F800022061A /* FlappySearch */ = {
+			isa = PBXGroup;
+			children = (
+				F3E2110019018F800022061A /* AppDelegate.h */,
+				F3E2110119018F800022061A /* AppDelegate.m */,
+				F3E2110619018F800022061A /* Images.xcassets */,
+				F3E2110319018F800022061A /* FlappySearch.xcdatamodeld */,
+				F3E210F819018F800022061A /* Supporting Files */,
+			);
+			path = FlappySearch;
+			sourceTree = "<group>";
+		};
+		F3E210F819018F800022061A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3E210F919018F800022061A /* FlappySearch-Info.plist */,
+				F3E210FA19018F800022061A /* InfoPlist.strings */,
+				F3E210FD19018F800022061A /* main.m */,
+				F3E210FF19018F800022061A /* FlappySearch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3E2111419018F800022061A /* FlappySearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3E2111A19018F800022061A /* FlappySearchTests.m */,
+				F3E2111519018F800022061A /* Supporting Files */,
+			);
+			path = FlappySearchTests;
+			sourceTree = "<group>";
+		};
+		F3E2111519018F800022061A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3E2111619018F800022061A /* FlappySearchTests-Info.plist */,
+				F3E2111719018F800022061A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3E210EB19018F7F0022061A /* FlappySearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3E2111E19018F800022061A /* Build configuration list for PBXNativeTarget "FlappySearch" */;
+			buildPhases = (
+				F3E210E819018F7F0022061A /* Sources */,
+				F3E210E919018F7F0022061A /* Frameworks */,
+				F3E210EA19018F7F0022061A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlappySearch;
+			productName = FlappySearch;
+			productReference = F3E210EC19018F7F0022061A /* FlappySearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3E2110B19018F800022061A /* FlappySearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3E2112119018F800022061A /* Build configuration list for PBXNativeTarget "FlappySearchTests" */;
+			buildPhases = (
+				F3E2110819018F800022061A /* Sources */,
+				F3E2110919018F800022061A /* Frameworks */,
+				F3E2110A19018F800022061A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3E2111319018F800022061A /* PBXTargetDependency */,
+			);
+			name = FlappySearchTests;
+			productName = FlappySearchTests;
+			productReference = F3E2110C19018F800022061A /* FlappySearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3E210E419018F7F0022061A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Mark Meyer";
+				TargetAttributes = {
+					F3E2110B19018F800022061A = {
+						TestTargetID = F3E210EB19018F7F0022061A;
+					};
+				};
+			};
+			buildConfigurationList = F3E210E719018F7F0022061A /* Build configuration list for PBXProject "FlappySearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3E210E319018F7F0022061A;
+			productRefGroup = F3E210ED19018F7F0022061A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3E210EB19018F7F0022061A /* FlappySearch */,
+				F3E2110B19018F800022061A /* FlappySearchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3E210EA19018F7F0022061A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E210FC19018F800022061A /* InfoPlist.strings in Resources */,
+				F3E2110719018F800022061A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E2110A19018F800022061A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E2111919018F800022061A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3E210E819018F7F0022061A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E2110519018F800022061A /* FlappySearch.xcdatamodeld in Sources */,
+				F3E2110219018F800022061A /* AppDelegate.m in Sources */,
+				F3E210FE19018F800022061A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E2110819018F800022061A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E2111B19018F800022061A /* FlappySearchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3E2111319018F800022061A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3E210EB19018F7F0022061A /* FlappySearch */;
+			targetProxy = F3E2111219018F800022061A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3E210FA19018F800022061A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3E210FB19018F800022061A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F3E2111719018F800022061A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3E2111819018F800022061A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3E2111C19018F800022061A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F3E2111D19018F800022061A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3E2111F19018F800022061A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlappySearch/FlappySearch-Prefix.pch";
+				INFOPLIST_FILE = "FlappySearch/FlappySearch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F3E2112019018F800022061A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlappySearch/FlappySearch-Prefix.pch";
+				INFOPLIST_FILE = "FlappySearch/FlappySearch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F3E2112219018F800022061A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlappySearch.app/FlappySearch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlappySearch/FlappySearch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FlappySearchTests/FlappySearchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F3E2112319018F800022061A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlappySearch.app/FlappySearch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlappySearch/FlappySearch-Prefix.pch";
+				INFOPLIST_FILE = "FlappySearchTests/FlappySearchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3E210E719018F7F0022061A /* Build configuration list for PBXProject "FlappySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E2111C19018F800022061A /* Debug */,
+				F3E2111D19018F800022061A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3E2111E19018F800022061A /* Build configuration list for PBXNativeTarget "FlappySearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E2111F19018F800022061A /* Debug */,
+				F3E2112019018F800022061A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F3E2112119018F800022061A /* Build configuration list for PBXNativeTarget "FlappySearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E2112219018F800022061A /* Debug */,
+				F3E2112319018F800022061A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F3E2110319018F800022061A /* FlappySearch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F3E2110419018F800022061A /* FlappySearch.xcdatamodel */,
+			);
+			currentVersion = F3E2110419018F800022061A /* FlappySearch.xcdatamodel */;
+			path = FlappySearch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F3E210E419018F7F0022061A /* Project object */;
+}
