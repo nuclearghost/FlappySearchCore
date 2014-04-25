@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		57DC1891922A43989CB8FE52 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F14A8D61A4842EC932EC413 /* libPods.a */; };
-		F3BD523C1901A33E00B42404 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BD523B1901A33E00B42404 /* Article.m */; };
 		F3BD523E1901A95700B42404 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3BD523D1901A95700B42404 /* Storyboard.storyboard */; };
 		F3BD52411901A99400B42404 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BD52401901A99400B42404 /* DataViewController.m */; };
 		F3E210F019018F7F0022061A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E210EF19018F7F0022061A /* Foundation.framework */; };
@@ -41,8 +40,6 @@
 /* Begin PBXFileReference section */
 		6F14A8D61A4842EC932EC413 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD7417F7E3A49578F9395E8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		F3BD523A1901A33D00B42404 /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
-		F3BD523B1901A33E00B42404 /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
 		F3BD523D1901A95700B42404 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		F3BD523F1901A99300B42404 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
 		F3BD52401901A99400B42404 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
@@ -134,8 +131,6 @@
 				F3BD523D1901A95700B42404 /* Storyboard.storyboard */,
 				F3BD523F1901A99300B42404 /* DataViewController.h */,
 				F3BD52401901A99400B42404 /* DataViewController.m */,
-				F3BD523A1901A33D00B42404 /* Article.h */,
-				F3BD523B1901A33E00B42404 /* Article.m */,
 				F3E2110619018F800022061A /* Images.xcassets */,
 				F3E2110319018F800022061A /* FlappySearch.xcdatamodeld */,
 				F3E210F819018F800022061A /* Supporting Files */,
@@ -303,7 +298,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3BD523C1901A33E00B42404 /* Article.m in Sources */,
 				F3E2110519018F800022061A /* FlappySearch.xcdatamodeld in Sources */,
 				F3E2110219018F800022061A /* AppDelegate.m in Sources */,
 				F3E210FE19018F800022061A /* main.m in Sources */,

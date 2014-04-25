@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C64" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Devices" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="result" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Result" inverseName="devices" inverseEntity="Result" syncable="YES"/>
+    </entity>
+    <entity name="Features" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="result" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Result" inverseName="features" inverseEntity="Result" syncable="YES"/>
+    </entity>
+    <entity name="Genre" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="result" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Result" inverseName="genres" inverseEntity="Result" syncable="YES"/>
+    </entity>
+    <entity name="Result" syncable="YES">
+        <attribute name="artistId" optional="YES" attributeType="Integer 64" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="artistName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="artistViewUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="artworkUrl60" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="artworkUrl100" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="artworkUrl512" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="averageUserRating" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="averageUserRatingForCurrentVersion" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="contentAdvisoryRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descript" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileSizeBytes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="formattedPrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isGameCenterEnabled" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
+        <attribute name="primaryGenreId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="primaryGenreName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="releaseDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="releaseNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sellerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tags" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbpng" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="trackCensoredName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trackId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="trackName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trackViewUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userRatingCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="userRatingCountForCurrentVersion" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wrapperType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="devices" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Devices" inverseName="result" inverseEntity="Devices" syncable="YES"/>
+        <relationship name="features" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Features" inverseName="result" inverseEntity="Features" syncable="YES"/>
+        <relationship name="genres" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Genre" inverseName="result" inverseEntity="Genre" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Devices" positionX="-72" positionY="429" width="128" height="73"/>
+        <element name="Features" positionX="90" positionY="342" width="128" height="30"/>
+        <element name="Genre" positionX="-666" positionY="690" width="128" height="30"/>
+        <element name="Result" positionX="-477" positionY="695" width="128" height="540"/>
+    </elements>
+</model>

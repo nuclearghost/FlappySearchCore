@@ -115,6 +115,8 @@
                                              [newResult setValue: [result objectForKey:@"version"] forKey:@"version"];
                                              [newResult setValue: [result objectForKey:@"wrapperType"] forKey:@"wrapperType"];
                                              
+                                             [newResult setValue:[NSData dataWithContentsOfURL:[NSURL URLWithString:[result objectForKey:@"artworkUrl512"]]] forKey:@"thumbpng"];
+                                             
                                              //Tagging area
                                              NSString *descrption = [result objectForKey:@"description"];
                                              NSMutableString *tags = [[NSMutableString alloc] init];
@@ -137,9 +139,9 @@
                                              
                                              [newResult setValue:tags forKey:@"tags"];
                                              
-                                             [context save:&error];
                                          }
-                                         
+                                         [context save:&error];
+
                                          //dispatch_async(dispatch_get_main_queue(), ^{
                                          //   successCompletion(array,nil);
                                          //});
@@ -188,12 +190,13 @@
     NSError *error;
     NSArray *objects = [context executeFetchRequest:request
                                               error:&error];
-    self.label.text = [NSString stringWithFormat:@"Count: %d", objects.count];
+    self.label.text = [NSString stringWithFormat:@"Count: %lu", (unsigned long)objects.count];
     
     if ([objects count] == 0) {
     } else {
         matches = objects[0];
         NSString *tags = [matches valueForKey:@"tags"];
+        NSLog(@"%@", tags);
     }
 }
 @end

@@ -35,6 +35,7 @@
         <attribute name="releaseNotes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sellerName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="tags" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbpng" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="trackCensoredName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="trackId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="trackName" optional="YES" attributeType="String" syncable="YES"/>
@@ -51,6 +52,6 @@
         <element name="Devices" positionX="-72" positionY="429" width="128" height="73"/>
         <element name="Features" positionX="90" positionY="342" width="128" height="30"/>
         <element name="Genre" positionX="-666" positionY="690" width="128" height="30"/>
-        <element name="Result" positionX="-477" positionY="695" width="128" height="88"/>
+        <element name="Result" positionX="-477" positionY="695" width="128" height="540"/>
     </elements>
 </model>
