@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F33ACB5A190A04B4006FABC4 /* FlappySearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F33ACB58190A04B4006FABC4 /* FlappySearch.xcdatamodeld */; };
 		F33ACB5C190A04D3006FABC4 /* FlappySearch.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F33ACB5B190A04D3006FABC4 /* FlappySearch.sqlite */; };
+		F33ACB5F190A10FD006FABC4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33ACB5E190A10FD006FABC4 /* DetailViewController.m */; };
 		F3F388091905D3B8008FD943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F388081905D3B8008FD943 /* Foundation.framework */; };
 		F3F3880B1905D3B8008FD943 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F3880A1905D3B8008FD943 /* CoreGraphics.framework */; };
 		F3F3880D1905D3B8008FD943 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F3880C1905D3B8008FD943 /* UIKit.framework */; };
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		F33ACB59190A04B4006FABC4 /* FlappySearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlappySearch.xcdatamodel; sourceTree = "<group>"; };
 		F33ACB5B190A04D3006FABC4 /* FlappySearch.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FlappySearch.sqlite; sourceTree = "<group>"; };
+		F33ACB5D190A10FD006FABC4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		F33ACB5E190A10FD006FABC4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		F3F388051905D3B8008FD943 /* Flappy Favs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy Favs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F388081905D3B8008FD943 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F3F3880A1905D3B8008FD943 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -133,6 +136,8 @@
 				F3F3881C1905D3B8008FD943 /* Flappy_Favs.xcdatamodeld */,
 				F3F388111905D3B8008FD943 /* Supporting Files */,
 				F3F3883D1905D3C9008FD943 /* Storyboard.storyboard */,
+				F33ACB5D190A10FD006FABC4 /* DetailViewController.h */,
+				F33ACB5E190A10FD006FABC4 /* DetailViewController.m */,
 				F3F388421905E023008FD943 /* ResultsViewController.h */,
 				F3F388431905E023008FD943 /* ResultsViewController.m */,
 			);
@@ -279,6 +284,7 @@
 				F33ACB5A190A04B4006FABC4 /* FlappySearch.xcdatamodeld in Sources */,
 				F3F3881E1905D3B8008FD943 /* Flappy_Favs.xcdatamodeld in Sources */,
 				F3F388441905E023008FD943 /* ResultsViewController.m in Sources */,
+				F33ACB5F190A10FD006FABC4 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

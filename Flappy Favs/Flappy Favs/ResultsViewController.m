@@ -94,8 +94,30 @@ static NSString *CellIdentifier = @"Cell";
         NSData *pngData = [matches valueForKey:@"thumbpng"];
         UIImageView *imgView = (UIImageView *)[cell viewWithTag:100];
         imgView.image = [UIImage imageWithData:pngData];
+        
+        UILabel *labelView = (UILabel *)[cell viewWithTag:101];
+        labelView.text = [matches valueForKey:@"trackName"];
+        
+        // Create and initialize a tap gesture
+        UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]
+                                                 initWithTarget:self action:@selector(respondToTapGesture:)];
+        
+        // Specify that the gesture must be a single tap
+        tapRecognizer.numberOfTapsRequired = 1;
+        
+        // Add the tap gesture recognizer to the view
+        [self.view addGestureRecognizer:tapRecognizer];
     }
     return cell;
+}
+
+-(void)respondToTapGesture:(id)sender
+{
+    NSLog(@"Tapped");
+    //DetailViewController *dvc = [[DetailViewController alloc] init];
+    //dvc.modalPresentationStyle = UIModalPresentationFormSheet;
+    //[self presentViewController:dvc animated:YES completion:^(void){}];
+    [self performSegueWithIdentifier:@"ModalSegue" sender:sender];
 }
 
 
@@ -108,4 +130,6 @@ static NSString *CellIdentifier = @"Cell";
     // Pass the selected object to the new view controller.
 }
 
+- (IBAction)cellTapped:(id)sender {
+}
 @end

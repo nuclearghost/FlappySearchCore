@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "DetailViewController.h"
 
 @interface ResultsViewController : UICollectionViewController
+- (IBAction)cellTapped:(id)sender;
 
 @end
