@@ -138,9 +138,8 @@
                                                                }];
                                              
                                              [newResult setValue:tags forKey:@"tags"];
-                                             
+                                             [context save:&error];
                                          }
-                                         [context save:&error];
 
                                          //dispatch_async(dispatch_get_main_queue(), ^{
                                          //   successCompletion(array,nil);
