@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F33ACB571909EB90006FABC4 /* FlappySearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F33ACB551909EB90006FABC4 /* FlappySearch.xcdatamodeld */; };
+		F33ACB5A190A04B4006FABC4 /* FlappySearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F33ACB58190A04B4006FABC4 /* FlappySearch.xcdatamodeld */; };
+		F33ACB5C190A04D3006FABC4 /* FlappySearch.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F33ACB5B190A04D3006FABC4 /* FlappySearch.sqlite */; };
 		F3F388091905D3B8008FD943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F388081905D3B8008FD943 /* Foundation.framework */; };
 		F3F3880B1905D3B8008FD943 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F3880A1905D3B8008FD943 /* CoreGraphics.framework */; };
 		F3F3880D1905D3B8008FD943 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F3880C1905D3B8008FD943 /* UIKit.framework */; };
@@ -25,7 +26,6 @@
 		F3F388341905D3B8008FD943 /* Flappy_FavsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F388331905D3B8008FD943 /* Flappy_FavsTests.m */; };
 		F3F3883E1905D3C9008FD943 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F3883D1905D3C9008FD943 /* Storyboard.storyboard */; };
 		F3F388441905E023008FD943 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F388431905E023008FD943 /* ResultsViewController.m */; };
-		F3F388471906010F008FD943 /* FlappySearch.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F3F388461906010F008FD943 /* FlappySearch.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F33ACB561909EB90006FABC4 /* FlappySearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlappySearch.xcdatamodel; sourceTree = "<group>"; };
+		F33ACB59190A04B4006FABC4 /* FlappySearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlappySearch.xcdatamodel; sourceTree = "<group>"; };
+		F33ACB5B190A04D3006FABC4 /* FlappySearch.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FlappySearch.sqlite; sourceTree = "<group>"; };
 		F3F388051905D3B8008FD943 /* Flappy Favs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy Favs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F388081905D3B8008FD943 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F3F3880A1905D3B8008FD943 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +63,6 @@
 		F3F388421905E023008FD943 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		F3F388431905E023008FD943 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
 		F3F388451905FEE7008FD943 /* Flappy Favs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flappy Favs.entitlements"; sourceTree = "<group>"; };
-		F3F388461906010F008FD943 /* FlappySearch.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FlappySearch.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +125,7 @@
 		F3F388101905D3B8008FD943 /* Flappy Favs */ = {
 			isa = PBXGroup;
 			children = (
-				F33ACB551909EB90006FABC4 /* FlappySearch.xcdatamodeld */,
+				F33ACB58190A04B4006FABC4 /* FlappySearch.xcdatamodeld */,
 				F3F388451905FEE7008FD943 /* Flappy Favs.entitlements */,
 				F3F388191905D3B8008FD943 /* AppDelegate.h */,
 				F3F3881A1905D3B8008FD943 /* AppDelegate.m */,
@@ -142,7 +142,7 @@
 		F3F388111905D3B8008FD943 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F3F388461906010F008FD943 /* FlappySearch.sqlite */,
+				F33ACB5B190A04D3006FABC4 /* FlappySearch.sqlite */,
 				F3F388121905D3B8008FD943 /* Flappy Favs-Info.plist */,
 				F3F388131905D3B8008FD943 /* InfoPlist.strings */,
 				F3F388161905D3B8008FD943 /* main.m */,
@@ -253,9 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F388151905D3B8008FD943 /* InfoPlist.strings in Resources */,
+				F33ACB5C190A04D3006FABC4 /* FlappySearch.sqlite in Resources */,
 				F3F388201905D3B8008FD943 /* Images.xcassets in Resources */,
 				F3F3883E1905D3C9008FD943 /* Storyboard.storyboard in Resources */,
-				F3F388471906010F008FD943 /* FlappySearch.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +276,7 @@
 			files = (
 				F3F3881B1905D3B8008FD943 /* AppDelegate.m in Sources */,
 				F3F388171905D3B8008FD943 /* main.m in Sources */,
-				F33ACB571909EB90006FABC4 /* FlappySearch.xcdatamodeld in Sources */,
+				F33ACB5A190A04B4006FABC4 /* FlappySearch.xcdatamodeld in Sources */,
 				F3F3881E1905D3B8008FD943 /* Flappy_Favs.xcdatamodeld in Sources */,
 				F3F388441905E023008FD943 /* ResultsViewController.m in Sources */,
 			);
@@ -493,12 +493,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F33ACB551909EB90006FABC4 /* FlappySearch.xcdatamodeld */ = {
+		F33ACB58190A04B4006FABC4 /* FlappySearch.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F33ACB561909EB90006FABC4 /* FlappySearch.xcdatamodel */,
+				F33ACB59190A04B4006FABC4 /* FlappySearch.xcdatamodel */,
 			);
-			currentVersion = F33ACB561909EB90006FABC4 /* FlappySearch.xcdatamodel */;
+			currentVersion = F33ACB59190A04B4006FABC4 /* FlappySearch.xcdatamodel */;
 			path = FlappySearch.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

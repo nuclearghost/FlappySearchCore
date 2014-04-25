@@ -92,7 +92,7 @@
     return _managedObjectModel;
      
     //_managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
-    return _managedObjectModel;
+    //return _managedObjectModel;
 }
 
 // Returns the persistent store coordinator for the application.

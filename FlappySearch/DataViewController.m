@@ -115,7 +115,7 @@
                                              [newResult setValue: [result objectForKey:@"version"] forKey:@"version"];
                                              [newResult setValue: [result objectForKey:@"wrapperType"] forKey:@"wrapperType"];
                                              
-                                             [newResult setValue:[NSData dataWithContentsOfURL:[NSURL URLWithString:[result objectForKey:@"artworkUrl512"]]] forKey:@"thumbpng"];
+                                             [newResult setValue:[NSData dataWithContentsOfURL:[NSURL URLWithString:[result objectForKey:@"artworkUrl60"]]] forKey:@"thumbpng"];
                                              
                                              //Tagging area
                                              NSString *descrption = [result objectForKey:@"description"];
