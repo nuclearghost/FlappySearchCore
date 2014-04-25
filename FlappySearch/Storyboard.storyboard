@@ -43,10 +43,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0aX-i4-Dq5">
+                                <rect key="frame" x="354" y="344" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="img" destination="0aX-i4-Dq5" id="ly5-Hr-Iin"/>
                         <outlet property="label" destination="cH0-ef-hCc" id="8rQ-SE-Nzc"/>
                     </connections>
                 </viewController>

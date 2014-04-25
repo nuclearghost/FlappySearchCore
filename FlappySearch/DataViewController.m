@@ -197,6 +197,8 @@
         matches = objects[0];
         NSString *tags = [matches valueForKey:@"tags"];
         NSLog(@"%@", tags);
+        NSData *pngData = [matches valueForKey:@"thumbpng"];
+        self.img.image = [UIImage imageWithData:pngData];
     }
 }
 @end
