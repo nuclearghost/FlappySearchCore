@@ -98,15 +98,10 @@ static NSString *CellIdentifier = @"Cell";
         UILabel *labelView = (UILabel *)[cell viewWithTag:101];
         labelView.text = [matches valueForKey:@"trackName"];
         
-        // Create and initialize a tap gesture
-        UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]
-                                                 initWithTarget:self action:@selector(respondToTapGesture:)];
+        collectionBtn *btn = (collectionBtn *)[cell viewWithTag:102];
+        btn.detailMO = matches;
         
-        // Specify that the gesture must be a single tap
-        tapRecognizer.numberOfTapsRequired = 1;
-        
-        // Add the tap gesture recognizer to the view
-        [self.view addGestureRecognizer:tapRecognizer];
+        [btn addTarget:self action:@selector(respondToTapGesture:) forControlEvents:UIControlEventTouchUpInside];
     }
     return cell;
 }
@@ -114,20 +109,19 @@ static NSString *CellIdentifier = @"Cell";
 -(void)respondToTapGesture:(id)sender
 {
     NSLog(@"Tapped");
-    //DetailViewController *dvc = [[DetailViewController alloc] init];
-    //dvc.modalPresentationStyle = UIModalPresentationFormSheet;
-    //[self presentViewController:dvc animated:YES completion:^(void){}];
     [self performSegueWithIdentifier:@"ModalSegue" sender:sender];
 }
 
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"ModalSegue"]){
+        DetailViewController *dvc = (DetailViewController*)segue.destinationViewController;
+        collectionBtn *btn = (collectionBtn *)sender;
+        dvc.detailMO = btn.detailMO;
+    }
 }
 
 - (IBAction)cellTapped:(id)sender {

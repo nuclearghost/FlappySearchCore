@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44B78D030AF44F2085093F01 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDF6E39287B4562A282AEE0 /* libPods.a */; };
 		F33ACB5A190A04B4006FABC4 /* FlappySearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F33ACB58190A04B4006FABC4 /* FlappySearch.xcdatamodeld */; };
 		F33ACB5C190A04D3006FABC4 /* FlappySearch.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F33ACB5B190A04D3006FABC4 /* FlappySearch.sqlite */; };
 		F33ACB5F190A10FD006FABC4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33ACB5E190A10FD006FABC4 /* DetailViewController.m */; };
@@ -27,6 +28,8 @@
 		F3F388341905D3B8008FD943 /* Flappy_FavsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F388331905D3B8008FD943 /* Flappy_FavsTests.m */; };
 		F3F3883E1905D3C9008FD943 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F3883D1905D3C9008FD943 /* Storyboard.storyboard */; };
 		F3F388441905E023008FD943 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F388431905E023008FD943 /* ResultsViewController.m */; };
+		F3FEDD93190B26F5007B9CD2 /* collectionBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEDD92190B26F5007B9CD2 /* collectionBtn.m */; };
+		F3FEDD96190C4719007B9CD2 /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEDD95190C4719007B9CD2 /* FavoritesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AED673CCCC1449DB893E1A20 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F33ACB59190A04B4006FABC4 /* FlappySearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlappySearch.xcdatamodel; sourceTree = "<group>"; };
 		F33ACB5B190A04D3006FABC4 /* FlappySearch.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FlappySearch.sqlite; sourceTree = "<group>"; };
 		F33ACB5D190A10FD006FABC4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -66,6 +70,11 @@
 		F3F388421905E023008FD943 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		F3F388431905E023008FD943 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
 		F3F388451905FEE7008FD943 /* Flappy Favs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flappy Favs.entitlements"; sourceTree = "<group>"; };
+		F3FEDD91190B26F5007B9CD2 /* collectionBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = collectionBtn.h; sourceTree = "<group>"; };
+		F3FEDD92190B26F5007B9CD2 /* collectionBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collectionBtn.m; sourceTree = "<group>"; };
+		F3FEDD94190C4719007B9CD2 /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewController.h; sourceTree = "<group>"; };
+		F3FEDD95190C4719007B9CD2 /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
+		FBDF6E39287B4562A282AEE0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +86,7 @@
 				F3F3880F1905D3B8008FD943 /* CoreData.framework in Frameworks */,
 				F3F3880D1905D3B8008FD943 /* UIKit.framework in Frameworks */,
 				F3F388091905D3B8008FD943 /* Foundation.framework in Frameworks */,
+				44B78D030AF44F2085093F01 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +111,7 @@
 				F3F3882D1905D3B8008FD943 /* Flappy FavsTests */,
 				F3F388071905D3B8008FD943 /* Frameworks */,
 				F3F388061905D3B8008FD943 /* Products */,
+				AED673CCCC1449DB893E1A20 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +132,7 @@
 				F3F3880C1905D3B8008FD943 /* UIKit.framework */,
 				F3F3880E1905D3B8008FD943 /* CoreData.framework */,
 				F3F388261905D3B8008FD943 /* XCTest.framework */,
+				FBDF6E39287B4562A282AEE0 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,12 +146,16 @@
 				F3F3881A1905D3B8008FD943 /* AppDelegate.m */,
 				F3F3881F1905D3B8008FD943 /* Images.xcassets */,
 				F3F3881C1905D3B8008FD943 /* Flappy_Favs.xcdatamodeld */,
-				F3F388111905D3B8008FD943 /* Supporting Files */,
 				F3F3883D1905D3C9008FD943 /* Storyboard.storyboard */,
+				F3FEDD94190C4719007B9CD2 /* FavoritesTableViewController.h */,
+				F3FEDD95190C4719007B9CD2 /* FavoritesTableViewController.m */,
+				F3FEDD91190B26F5007B9CD2 /* collectionBtn.h */,
+				F3FEDD92190B26F5007B9CD2 /* collectionBtn.m */,
 				F33ACB5D190A10FD006FABC4 /* DetailViewController.h */,
 				F33ACB5E190A10FD006FABC4 /* DetailViewController.m */,
 				F3F388421905E023008FD943 /* ResultsViewController.h */,
 				F3F388431905E023008FD943 /* ResultsViewController.m */,
+				F3F388111905D3B8008FD943 /* Supporting Files */,
 			);
 			path = "Flappy Favs";
 			sourceTree = "<group>";
@@ -181,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3F388371905D3B8008FD943 /* Build configuration list for PBXNativeTarget "Flappy Favs" */;
 			buildPhases = (
+				E8A3828A1A3C45D8A35C546A /* Check Pods Manifest.lock */,
 				F3F388011905D3B8008FD943 /* Sources */,
 				F3F388021905D3B8008FD943 /* Frameworks */,
 				F3F388031905D3B8008FD943 /* Resources */,
+				7453F5146BFA4A4EB0C03E35 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,6 +292,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7453F5146BFA4A4EB0C03E35 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8A3828A1A3C45D8A35C546A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F3F388011905D3B8008FD943 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -282,8 +333,10 @@
 				F3F3881B1905D3B8008FD943 /* AppDelegate.m in Sources */,
 				F3F388171905D3B8008FD943 /* main.m in Sources */,
 				F33ACB5A190A04B4006FABC4 /* FlappySearch.xcdatamodeld in Sources */,
+				F3FEDD96190C4719007B9CD2 /* FavoritesTableViewController.m in Sources */,
 				F3F3881E1905D3B8008FD943 /* Flappy_Favs.xcdatamodeld in Sources */,
 				F3F388441905E023008FD943 /* ResultsViewController.m in Sources */,
+				F3FEDD93190B26F5007B9CD2 /* collectionBtn.m in Sources */,
 				F33ACB5F190A10FD006FABC4 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +453,7 @@
 		};
 		F3F388381905D3B8008FD943 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED673CCCC1449DB893E1A20 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -414,6 +468,7 @@
 		};
 		F3F388391905D3B8008FD943 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED673CCCC1449DB893E1A20 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

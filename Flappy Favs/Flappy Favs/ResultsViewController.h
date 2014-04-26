@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "DetailViewController.h"
+#import "collectionBtn.h"
 
-@interface ResultsViewController : UICollectionViewController
+@interface ResultsViewController : UIViewController
 - (IBAction)cellTapped:(id)sender;
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end

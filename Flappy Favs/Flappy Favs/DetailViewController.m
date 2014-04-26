@@ -29,21 +29,36 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if (self.detailMO != nil) {
+        NSData *pngData = [self.detailMO valueForKey:@"thumbpng"];
+        self.iconImg.image = [UIImage imageWithData:pngData];
+        
+        self.titleLabel.text = [self.detailMO valueForKey:@"trackName"];
+        
+        self.descriptionText.text = [self.detailMO valueForKey:@"descript"];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)closeTapped:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:^(void){}];
 }
-*/
 
+- (IBAction)addTapped:(id)sender {
+}
+
+- (IBAction)viewTapped:(id)sender {
+    NSNumber *id = [self.detailMO valueForKey:@"trackId"];
+    NSString *url = [NSString stringWithFormat:@"http://itunes.apple.com/app/id%@", id];
+    NSLog(@"%@", url);
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+}
 @end

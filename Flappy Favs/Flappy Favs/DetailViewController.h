@@ -9,5 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailViewController : UIViewController
+- (IBAction)closeTapped:(id)sender;
+- (IBAction)addTapped:(id)sender;
+- (IBAction)viewTapped:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIImageView *screenShotImg;
+@property (weak, nonatomic) IBOutlet UITextView *descriptionText;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *iconImg;
+
+@property (strong, nonatomic) NSManagedObject *detailMO;
 
 @end
