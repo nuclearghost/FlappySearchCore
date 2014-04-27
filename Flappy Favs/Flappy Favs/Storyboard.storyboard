@@ -7,21 +7,21 @@
         <!--Favorites Table View Controller-->
         <scene sceneID="f61-o1-kjc">
             <objects>
-                <tableViewController storyboardIdentifier="TableView" id="07t-Ft-f16" customClass="FavoritesTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TableView" autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="currentContext" id="07t-Ft-f16" customClass="FavoritesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zxJ-vc-ubx">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TableCell" textLabel="VR7-as-2de" style="IBUITableViewCellStyleDefault" id="nFf-xl-WzZ">
-                                <rect key="frame" x="0.0" y="22" width="768" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="200" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nFf-xl-WzZ" id="4pw-dy-clt">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VR7-as-2de">
-                                            <rect key="frame" x="15" y="0.0" width="738" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="170" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -36,13 +36,15 @@
                             <outlet property="delegate" destination="07t-Ft-f16" id="gWc-T1-lcf"/>
                         </connections>
                     </tableView>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="200" height="768"/>
                     <connections>
-                        <segue destination="uI8-Sx-ViM" kind="custom" customClass="ECSlidingSegue" id="ymR-3W-Nlv"/>
+                        <segue destination="uI8-Sx-ViM" kind="custom" identifier="CollectionSegue" customClass="ECSlidingSegue" id="ymR-3W-Nlv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAD-cG-08c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1539" y="2293"/>
+            <point key="canvasLocation" x="2467" y="-113"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="pIv-Nf-xOT">
@@ -57,7 +59,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0nX-M1-0bL">
-                                <rect key="frame" x="0.0" y="65" width="768" height="959"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="u4p-Nc-mdh">
                                     <size key="itemSize" width="100" height="100"/>
@@ -121,6 +123,7 @@
                         </textField>
                     </navigationItem>
                     <connections>
+                        <outlet property="collectionView" destination="0nX-M1-0bL" id="ra3-Wn-ugz"/>
                         <segue destination="2ma-in-PaF" kind="modal" identifier="ModalSegue" modalPresentationStyle="formSheet" id="d0B-cO-0ER"/>
                     </connections>
                 </viewController>
@@ -201,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HAp-7a-kZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3828" y="1301"/>
+            <point key="canvasLocation" x="3460" y="1301"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="P3n-kQ-xkZ">
@@ -221,7 +224,7 @@
         <!--Sliding View Controller-->
         <scene sceneID="33v-W5-HJg">
             <objects>
-                <viewController id="irC-Mb-ekj" customClass="ECSlidingViewController" sceneMemberID="viewController">
+                <viewController id="irC-Mb-ekj" customClass="SlidingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GLv-2Q-pzg"/>
                         <viewControllerLayoutGuide type="bottom" id="OBo-HX-wVu"/>

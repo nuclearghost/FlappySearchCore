@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface FavoritesTableViewController : UITableViewController
+
 - (IBAction)unwindToMenuViewController:(UIStoryboardSegue *)segue;
+
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @end

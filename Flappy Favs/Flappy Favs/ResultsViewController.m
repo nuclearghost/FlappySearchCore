@@ -28,9 +28,19 @@ static NSString *CellIdentifier = @"Cell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //[self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CellIdentifier];
     self.collectionView.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //self.collectionView.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    //self.collectionView.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,8 +77,6 @@ static NSString *CellIdentifier = @"Cell";
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    //cell.backgroundColor = [UIColor orangeColor];
     
     AppDelegate *appDelegate =
     [[UIApplication sharedApplication] delegate];
@@ -112,7 +120,6 @@ static NSString *CellIdentifier = @"Cell";
     [self performSegueWithIdentifier:@"ModalSegue" sender:sender];
 }
 
-
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -124,6 +131,4 @@ static NSString *CellIdentifier = @"Cell";
     }
 }
 
-- (IBAction)cellTapped:(id)sender {
-}
 @end
