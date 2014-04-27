@@ -28,7 +28,6 @@
 		F3F388441905E023008FD943 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F388431905E023008FD943 /* ResultsViewController.m */; };
 		F3FEDD93190B26F5007B9CD2 /* collectionBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEDD92190B26F5007B9CD2 /* collectionBtn.m */; };
 		F3FEDD96190C4719007B9CD2 /* FavoritesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEDD95190C4719007B9CD2 /* FavoritesTableViewController.m */; };
-		F3FEDD9B190C765B007B9CD2 /* StoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEDD98190C765B007B9CD2 /* StoreManager.m */; };
 		F3FEDD9C190C765B007B9CD2 /* StoreManagerCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEDD9A190C765B007B9CD2 /* StoreManagerCloud.m */; };
 		F3FEDDA0190D991A007B9CD2 /* SlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEDD9F190D991A007B9CD2 /* SlidingViewController.m */; };
 		F3FEDDA3190DA957007B9CD2 /* FlappySearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3FEDDA1190DA957007B9CD2 /* FlappySearch.xcdatamodeld */; };
@@ -74,8 +73,6 @@
 		F3FEDD92190B26F5007B9CD2 /* collectionBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = collectionBtn.m; sourceTree = "<group>"; };
 		F3FEDD94190C4719007B9CD2 /* FavoritesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesTableViewController.h; sourceTree = "<group>"; };
 		F3FEDD95190C4719007B9CD2 /* FavoritesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesTableViewController.m; sourceTree = "<group>"; };
-		F3FEDD97190C765B007B9CD2 /* StoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreManager.h; sourceTree = "<group>"; };
-		F3FEDD98190C765B007B9CD2 /* StoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreManager.m; sourceTree = "<group>"; };
 		F3FEDD99190C765B007B9CD2 /* StoreManagerCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreManagerCloud.h; sourceTree = "<group>"; };
 		F3FEDD9A190C765B007B9CD2 /* StoreManagerCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreManagerCloud.m; sourceTree = "<group>"; };
 		F3FEDD9E190D991A007B9CD2 /* SlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingViewController.h; sourceTree = "<group>"; };
@@ -147,8 +144,6 @@
 		F3F388101905D3B8008FD943 /* Flappy Favs */ = {
 			isa = PBXGroup;
 			children = (
-				F3FEDD97190C765B007B9CD2 /* StoreManager.h */,
-				F3FEDD98190C765B007B9CD2 /* StoreManager.m */,
 				F3FEDD99190C765B007B9CD2 /* StoreManagerCloud.h */,
 				F3FEDD9A190C765B007B9CD2 /* StoreManagerCloud.m */,
 				F3F388191905D3B8008FD943 /* AppDelegate.h */,
@@ -350,7 +345,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3FEDD9B190C765B007B9CD2 /* StoreManager.m in Sources */,
 				F3FEDDA0190D991A007B9CD2 /* SlidingViewController.m in Sources */,
 				F3F3881B1905D3B8008FD943 /* AppDelegate.m in Sources */,
 				F3F388171905D3B8008FD943 /* main.m in Sources */,

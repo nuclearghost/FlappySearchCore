@@ -8,9 +8,6 @@
 
 #import "AppDelegate.h"
 
-#import "StoreManagerCloud.h"
-#import "StoreManager.h"
-
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
