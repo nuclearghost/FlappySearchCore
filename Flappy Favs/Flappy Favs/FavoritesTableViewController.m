@@ -45,27 +45,19 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return [[self.fetchedResultsController sections] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section == 0){
-        return 1;
-    } else {
-        id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section - 1];
-        NSLog(@"Number of rows in section; %lu", (unsigned long)[sectionInfo numberOfObjects]);
-        return [sectionInfo numberOfObjects];
-    }
+    id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
+    NSLog(@"Number of rows in section; %lu", (unsigned long)[sectionInfo numberOfObjects]);
+    return [sectionInfo numberOfObjects];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    if (section == 0) {
-        return @"";
-    } else {
-        return @"Favorites";
-    }
+    return @"Favorites";
 }
 
 
@@ -73,12 +65,7 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TableCell" forIndexPath:indexPath];
     
-    // Configure the cell...
-    if (indexPath.section == 0){
-        cell.textLabel.text = @"Close";
-    } else {
-        [self configureCell:cell atIndexPath:indexPath];
-    }
+    [self configureCell:cell atIndexPath:indexPath];
     
     return cell;
 }
@@ -87,35 +74,38 @@
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Return NO if you do not want the specified item to be editable.
-    if (indexPath.section == 0){
-        return NO;
-    }
     return YES;
 }
 
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"Edit row");
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
         NSLog(@"Delete");
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
+
+        [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
+        
+        NSError *error = nil;
+        if (![context save:&error]) {
+            // Replace this implementation with code to handle the error appropriately.
+            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            abort();
+        }
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         NSLog(@"Edit");
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (indexPath.section == 0) {
-        [self performSegueWithIdentifier:@"CollectionSegue" sender:nil];
-    }
-}
-
 - (IBAction)unwindToMenuViewController:(UIStoryboardSegue *)segue { }
+
+- (IBAction)closeTapped:(id)sender {
+    NSLog(@"Close");
+    [self performSegueWithIdentifier:@"CollectionSegue" sender:nil];
+
+}
 
 #pragma mark - Fetched results controller
 
@@ -136,7 +126,7 @@
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
     NSArray *sortDescriptors = @[sortDescriptor];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
@@ -211,9 +201,7 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    //NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    NSIndexPath *tmpPath = [NSIndexPath indexPathForItem:indexPath.item inSection:0];
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:tmpPath];
+    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [object valueForKey:@"name"];
 }
 

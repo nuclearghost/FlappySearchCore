@@ -12,6 +12,7 @@
 @interface FavoritesTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 - (IBAction)unwindToMenuViewController:(UIStoryboardSegue *)segue;
+- (IBAction)closeTapped:(id)sender;
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
