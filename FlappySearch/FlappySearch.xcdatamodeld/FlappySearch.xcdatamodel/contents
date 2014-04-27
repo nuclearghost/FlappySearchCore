@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C64" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C1021" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Application" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Devices" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="result" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Result" inverseName="devices" inverseEntity="Result" syncable="YES"/>
@@ -49,9 +53,10 @@
         <relationship name="genres" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Genre" inverseName="result" inverseEntity="Genre" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Devices" positionX="-72" positionY="429" width="128" height="73"/>
+        <element name="Devices" positionX="-72" positionY="429" width="128" height="75"/>
         <element name="Features" positionX="90" positionY="342" width="128" height="30"/>
         <element name="Genre" positionX="-666" positionY="690" width="128" height="30"/>
         <element name="Result" positionX="-477" positionY="695" width="128" height="540"/>
+        <element name="Application" positionX="-450" positionY="504" width="128" height="73"/>
     </elements>
 </model>

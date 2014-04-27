@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "StoreManagerCloud.h"
+
 @interface DetailViewController : UIViewController
 - (IBAction)closeTapped:(id)sender;
 - (IBAction)addTapped:(id)sender;

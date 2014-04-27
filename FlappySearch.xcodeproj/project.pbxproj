@@ -174,11 +174,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3E2111E19018F800022061A /* Build configuration list for PBXNativeTarget "FlappySearch" */;
 			buildPhases = (
-				99856A78993F47FE86D6FEDE /* Check Pods Manifest.lock */,
 				F3E210E819018F7F0022061A /* Sources */,
 				F3E210E919018F7F0022061A /* Frameworks */,
 				F3E210EA19018F7F0022061A /* Resources */,
-				F4E809A1F1824E69A9DCBD46 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,39 +257,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		99856A78993F47FE86D6FEDE /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F4E809A1F1824E69A9DCBD46 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3E210E819018F7F0022061A /* Sources */ = {

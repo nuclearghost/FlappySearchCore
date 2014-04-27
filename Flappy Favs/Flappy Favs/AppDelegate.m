@@ -19,24 +19,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    /*
-    [StoreManagerCloud sharedStoreManagerCloud];
-    [[StoreManager sharedStoreManager] setUpStore:@"wishlist.sql" model:@"Wishlist" iCloud:NO];
-    
-    // Create some sample data for the local store;
-    //
-    NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:@"Application"
-                                                                      inManagedObjectContext:[StoreManager sharedStoreManager].managedObjectContext
-                                         ];
-    
-    [newManagedObject setValue:[[NSDate date] description] forKey:@"applicationId"];
-    [newManagedObject setValue:[[NSDate date] description] forKey:@"name"];
-    [[StoreManager sharedStoreManager] saveContext];
-    
-    // Do a quick fetch to make sure we have addd the data
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Application"];
-    NSArray *results = [[StoreManager sharedStoreManager].managedObjectContext executeFetchRequest:request error:nil];
-    */
     return YES;
 }
 

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		44B78D030AF44F2085093F01 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBDF6E39287B4562A282AEE0 /* libPods.a */; };
-		F33ACB5A190A04B4006FABC4 /* FlappySearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F33ACB58190A04B4006FABC4 /* FlappySearch.xcdatamodeld */; };
 		F33ACB5C190A04D3006FABC4 /* FlappySearch.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F33ACB5B190A04D3006FABC4 /* FlappySearch.sqlite */; };
 		F33ACB5F190A10FD006FABC4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33ACB5E190A10FD006FABC4 /* DetailViewController.m */; };
 		F3F388091905D3B8008FD943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F388081905D3B8008FD943 /* Foundation.framework */; };
@@ -18,7 +17,6 @@
 		F3F388151905D3B8008FD943 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3F388131905D3B8008FD943 /* InfoPlist.strings */; };
 		F3F388171905D3B8008FD943 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F388161905D3B8008FD943 /* main.m */; };
 		F3F3881B1905D3B8008FD943 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F3881A1905D3B8008FD943 /* AppDelegate.m */; };
-		F3F3881E1905D3B8008FD943 /* FlappyFavs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3F3881C1905D3B8008FD943 /* FlappyFavs.xcdatamodeld */; };
 		F3F388201905D3B8008FD943 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F3881F1905D3B8008FD943 /* Images.xcassets */; };
 		F3F388271905D3B8008FD943 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F388261905D3B8008FD943 /* XCTest.framework */; };
 		F3F388281905D3B8008FD943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F388081905D3B8008FD943 /* Foundation.framework */; };
@@ -33,6 +31,7 @@
 		F3FEDD9B190C765B007B9CD2 /* StoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEDD98190C765B007B9CD2 /* StoreManager.m */; };
 		F3FEDD9C190C765B007B9CD2 /* StoreManagerCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEDD9A190C765B007B9CD2 /* StoreManagerCloud.m */; };
 		F3FEDDA0190D991A007B9CD2 /* SlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEDD9F190D991A007B9CD2 /* SlidingViewController.m */; };
+		F3FEDDA3190DA957007B9CD2 /* FlappySearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3FEDDA1190DA957007B9CD2 /* FlappySearch.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +46,6 @@
 
 /* Begin PBXFileReference section */
 		AED673CCCC1449DB893E1A20 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		F33ACB59190A04B4006FABC4 /* FlappySearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlappySearch.xcdatamodel; sourceTree = "<group>"; };
 		F33ACB5B190A04D3006FABC4 /* FlappySearch.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FlappySearch.sqlite; sourceTree = "<group>"; };
 		F33ACB5D190A10FD006FABC4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		F33ACB5E190A10FD006FABC4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 		F3F388181905D3B8008FD943 /* Flappy Favs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flappy Favs-Prefix.pch"; sourceTree = "<group>"; };
 		F3F388191905D3B8008FD943 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F3F3881A1905D3B8008FD943 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F3F3881D1905D3B8008FD943 /* FlappyFavs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlappyFavs.xcdatamodel; sourceTree = "<group>"; };
 		F3F3881F1905D3B8008FD943 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F3F388251905D3B8008FD943 /* Flappy FavsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flappy FavsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F388261905D3B8008FD943 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -83,6 +80,7 @@
 		F3FEDD9A190C765B007B9CD2 /* StoreManagerCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreManagerCloud.m; sourceTree = "<group>"; };
 		F3FEDD9E190D991A007B9CD2 /* SlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingViewController.h; sourceTree = "<group>"; };
 		F3FEDD9F190D991A007B9CD2 /* SlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlidingViewController.m; sourceTree = "<group>"; };
+		F3FEDDA2190DA957007B9CD2 /* FlappySearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlappySearch.xcdatamodel; sourceTree = "<group>"; };
 		FBDF6E39287B4562A282AEE0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -207,8 +205,7 @@
 		F3FEDD9D190C7CB7007B9CD2 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				F33ACB58190A04B4006FABC4 /* FlappySearch.xcdatamodeld */,
-				F3F3881C1905D3B8008FD943 /* FlappyFavs.xcdatamodeld */,
+				F3FEDDA1190DA957007B9CD2 /* FlappySearch.xcdatamodeld */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -358,10 +355,9 @@
 				F3F3881B1905D3B8008FD943 /* AppDelegate.m in Sources */,
 				F3F388171905D3B8008FD943 /* main.m in Sources */,
 				F3FEDD9C190C765B007B9CD2 /* StoreManagerCloud.m in Sources */,
-				F33ACB5A190A04B4006FABC4 /* FlappySearch.xcdatamodeld in Sources */,
 				F3FEDD96190C4719007B9CD2 /* FavoritesTableViewController.m in Sources */,
-				F3F3881E1905D3B8008FD943 /* FlappyFavs.xcdatamodeld in Sources */,
 				F3F388441905E023008FD943 /* ResultsViewController.m in Sources */,
+				F3FEDDA3190DA957007B9CD2 /* FlappySearch.xcdatamodeld in Sources */,
 				F3FEDD93190B26F5007B9CD2 /* collectionBtn.m in Sources */,
 				F33ACB5F190A10FD006FABC4 /* DetailViewController.m in Sources */,
 			);
@@ -580,23 +576,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F33ACB58190A04B4006FABC4 /* FlappySearch.xcdatamodeld */ = {
+		F3FEDDA1190DA957007B9CD2 /* FlappySearch.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F33ACB59190A04B4006FABC4 /* FlappySearch.xcdatamodel */,
+				F3FEDDA2190DA957007B9CD2 /* FlappySearch.xcdatamodel */,
 			);
-			currentVersion = F33ACB59190A04B4006FABC4 /* FlappySearch.xcdatamodel */;
+			currentVersion = F3FEDDA2190DA957007B9CD2 /* FlappySearch.xcdatamodel */;
 			path = FlappySearch.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		F3F3881C1905D3B8008FD943 /* FlappyFavs.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F3F3881D1905D3B8008FD943 /* FlappyFavs.xcdatamodel */,
-			);
-			currentVersion = F3F3881D1905D3B8008FD943 /* FlappyFavs.xcdatamodel */;
-			path = FlappyFavs.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StoreManagerCloud.h"
 
-@interface FavoritesTableViewController : UITableViewController
+@interface FavoritesTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
 - (IBAction)unwindToMenuViewController:(UIStoryboardSegue *)segue;
 

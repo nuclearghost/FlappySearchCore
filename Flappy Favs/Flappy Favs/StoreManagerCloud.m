@@ -8,8 +8,8 @@
 @import CoreData;
 #import "StoreManagerCloud.h"
 
-static NSString* const kCoreDataModel = @"CoreDataSync";
-static NSString* const kCoreDataStore = @"coredatasync.sql";
+static NSString* const kCoreDataModel = @"FlappySearch";
+static NSString* const kCoreDataStore = @"FlappySearch.sqlite";
 
 //------------------------------------------------------------------------------
 #pragma mark - Class Extension
@@ -52,15 +52,14 @@ static NSString* const kCoreDataStore = @"coredatasync.sql";
 //------------------------------------------------------------------------------
 - (NSURL*)modelURL
 {
+    NSLog(@"Model URL %@", [[NSBundle mainBundle] URLForResource:kCoreDataModel withExtension:@"momd"]);
     return [[NSBundle mainBundle] URLForResource:kCoreDataModel withExtension:@"momd"];
 }
 
 - (NSURL*)storeURL
 {
-    NSURL *applicationDocumentsDirectory = [[[NSFileManager defaultManager]
-                                             URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask]
-                                            lastObject];
-    return [applicationDocumentsDirectory URLByAppendingPathComponent:kCoreDataStore];
+    NSURL *storeURL = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"FlappySearch" ofType:@"sqlite"]];
+    return storeURL;
 }
 
 - (NSDictionary *)iCloudPersistentStoreOptions
@@ -88,7 +87,9 @@ static NSString* const kCoreDataStore = @"coredatasync.sql";
                                                                                  URL:[self storeURL]
                                                                              options:[self iCloudPersistentStoreOptions]
                                                                                error:&error];
-    NSLog(@"Error: %@",[error localizedDescription]);
+    if (error != nil) {
+        NSLog(@"Error: %@",[error localizedDescription]);
+    }
 }
 
 - (void)saveContext

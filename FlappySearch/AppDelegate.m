@@ -6,9 +6,6 @@
 //  Copyright (c) 2014 Mark Meyer. All rights reserved.
 //
 
-#import <RestKit/RestKit.h>
-#import <RestKit/CoreData.h>
-
 #import "AppDelegate.h"
 
 @implementation AppDelegate
