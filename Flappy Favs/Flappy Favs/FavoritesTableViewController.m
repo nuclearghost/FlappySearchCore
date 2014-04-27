@@ -77,6 +77,15 @@
     return YES;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    NSNumber *id = [object valueForKey:@"id"];
+    NSString *url = [NSString stringWithFormat:@"http://itunes.apple.com/app/id%@", id];
+    NSLog(@"%@", url);
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+}
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {

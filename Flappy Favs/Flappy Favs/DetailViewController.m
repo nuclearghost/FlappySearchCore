@@ -59,6 +59,8 @@
                                                                       inManagedObjectContext:context];
     
     [newManagedObject setValue:[self.detailMO valueForKey:@"trackName"] forKey:@"name"];
+    [newManagedObject setValue:[[self.detailMO valueForKey:@"trackId"] stringValue] forKey:@"id"];
+
     
     // Save the context.
     NSError *error = nil;
