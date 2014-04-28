@@ -35,13 +35,11 @@ static NSString *CellIdentifier = @"Cell";
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    //self.collectionView.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    //self.collectionView.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning

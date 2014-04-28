@@ -4,6 +4,9 @@
 //  Created by T. Andrew Binkowski on 3/24/14.
 //  Copyright (c) 2014 T. Andrew Binkowski. All rights reserved.
 //
+//  Imported by Mark Meyer on 4/25/14
+//  From https://github.com/uchicago/2014-Spring-CoreDataSync
+
 
 @import CoreData;
 
@@ -38,24 +41,6 @@
  */
 - (NSURL*)modelURL;
 
-/**
- *
- */
 - (void)saveContext;
 
-/*
-- (void)saveDataInManagedContextUsingBlock:(void (^)(BOOL saved, NSError *error))savedBlock;
-
-- (NSFetchedResultsController *)fetchEntitiesWithClassName:(NSString *)className
-                                           sortDescriptors:(NSArray *)sortDescriptors
-                                        sectionNameKeyPath:(NSString *)sectionNameKeypath
-                                                 predicate:(NSPredicate *)predicate;
-
-- (id)createEntityWithClassName:(NSString *)className
-           attributesDictionary:(NSDictionary *)attributesDictionary;
-- (void)deleteEntity:(NSManagedObject *)entity;
-- (BOOL)uniqueAttributeForClassName:(NSString *)className
-                      attributeName:(NSString *)attributeName
-                     attributeValue:(id)attributeValue;
-*/
 @end

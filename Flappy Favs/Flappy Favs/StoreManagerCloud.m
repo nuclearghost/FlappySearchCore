@@ -132,19 +132,6 @@ static NSString* const kCoreDataStore = @"FlappySearch.sqlite";
                            selector:@selector(persistentStoreDidImportUbiquitousContentChanges:)
                                name:NSPersistentStoreDidImportUbiquitousContentChangesNotification
                              object:self.persistentStoreCoordinator];
-    
-    /*[[NSNotificationCenter defaultCenter] addObserverForName:NSPersistentStoreCoordinatorStoresWillChangeNotification
-     object:self.managedObjectContext.persistentStoreCoordinator
-     queue:[NSOperationQueue mainQueue]
-     usingBlock:^(NSNotification *note) {
-     CDLog(nil,@"StoreWillChangeNotification");
-     [self.managedObjectContext performBlock:^{
-     [self.managedObjectContext reset];
-     }];
-     // drop any managed object references
-     // disable user interface with setEnabled: or an overlay
-     }];
-     */
 }
 
 //------------------------------------------------------------------------------
