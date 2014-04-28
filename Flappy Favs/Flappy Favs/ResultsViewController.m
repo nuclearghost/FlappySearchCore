@@ -9,7 +9,7 @@
 #import "ResultsViewController.h"
 
 @interface ResultsViewController ()
-
+@property (strong, nonatomic) NSPredicate *filterPred;
 @end
 
 @implementation ResultsViewController
@@ -29,6 +29,7 @@ static NSString *CellIdentifier = @"Cell";
 {
     [super viewDidLoad];
     self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.filterPred = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -66,6 +67,7 @@ static NSString *CellIdentifier = @"Cell";
     
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDesc];
+    [request setPredicate:self.filterPred];
     
     NSError *error;
     NSArray *objects = [context executeFetchRequest:request
@@ -90,6 +92,7 @@ static NSString *CellIdentifier = @"Cell";
     
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDesc];
+    [request setPredicate:self.filterPred];
     
     NSError *error;
     NSArray *objects = [context executeFetchRequest:request
@@ -131,4 +134,22 @@ static NSString *CellIdentifier = @"Cell";
     }
 }
 
+#pragma mark - UITextFieldDelegate
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    NSLog(@"TextField: %@", textField.text);
+    if ([textField.text length] > 0){
+        self.filterPred = [NSPredicate predicateWithFormat:@"(tags contains[c] %@) OR (trackName contains[c] %@)", textField.text, textField.text];
+    } else {
+        self.filterPred = nil;
+    }
+    [self.collectionView reloadData];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
 @end

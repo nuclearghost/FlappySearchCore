@@ -11,7 +11,7 @@
 #import "DetailViewController.h"
 #import "collectionBtn.h"
 
-@interface ResultsViewController : UIViewController
+@interface ResultsViewController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
